@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   overflow: auto;
-  padding-top: 80px;
+  padding-top: 40px;
   margin: auto;
 }
 
@@ -148,4 +148,30 @@
 .user_name_input:focus:invalid + .error_text {
   color: red;
   display: block;
+}
+
+@media screen and (max-width: 998px) {
+  .modal_content {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .modal_content {
+    width: 90%;
+    height: auto;
+  }
+
+  .input_container input {
+    width: 60%;
+  }
+
+  .input_container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .input_container label {
+    width: auto;
+  }
 }

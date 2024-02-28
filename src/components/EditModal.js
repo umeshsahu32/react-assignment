@@ -86,10 +86,10 @@ const EditModal = ({ hideModalHandler, showUser, updateDataHandler }) => {
                 onChange={(e) => inputChangeHandler(e)}
               />
             </div>
-          </div>
-          <div className={styles.btn_container}>
-            <button onClick={hideModalHandler}>Cancel</button>
-            <button onClick={() => updateDataHandler(userData)}>Edit</button>
+            <div className={styles.btn_container}>
+              <button onClick={hideModalHandler}>Cancel</button>
+              <button onClick={() => updateDataHandler(userData)}>Edit</button>
+            </div>
           </div>
         </div>
       </div>
